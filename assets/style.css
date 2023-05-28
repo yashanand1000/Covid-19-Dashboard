@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* List */
+ul {
+  counter-reset: index;
+  padding: 0;
+}
+
+/* List element */
+li {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.Select-control {
+    background-color: #282828;
+}
+
+
+/* changes the text color of input box */
+.Select-value-label {
+    color: #adafae !important;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+
+/* dropdown menu options */
+.VirtualizedSelectOption {
+    background-color: #282828;
+    color: #adafae;
+ }
+
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 662c34a89dbe74a950e317de433e29502cc5e54d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: last 2 versions
+}
