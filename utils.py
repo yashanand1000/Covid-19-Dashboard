@@ -147,12 +147,12 @@ df_covid_age.drop('ccgname', axis=1, inplace=True)
 
 def update_graph_age():
     traces = []
-    for sex in df_covid_age['sex'].unique():
-        df_by_Type = df_covid_age[df_covid_age['sex'] == sex]
+    for gender in df_covid_age['gender'].unique():
+        df_by_Type = df_covid_age[df_covid_age['gender'] == gender]
         traces.append(go.Histogram(
             x=df_by_Type['ageband'],
             y=df_by_Type['Total'],
-            name=sex
+            name=gender
         ))
     fig = {
         'data': traces,
