@@ -26,7 +26,7 @@ server = app.server
 app.layout = dbc.Container([
 
     html.Div([
-        html.H1(['Data Visualization Project: Covid-19 Visualization (UK)'],
+        html.H1(['Data Visualization Project: Covid-19 Visualization (India)'],
                 style={'text-align': 'center', 'color': '#adafae'}),
         html.Hr(style={'background-color': 'rgba(61,61,61,0.5)'}),
     ], style={'margin-top': '10px'}),
@@ -198,7 +198,7 @@ app.layout = dbc.Container([
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H2(['Heatmap for Deaths in UK Regions'], style={
+                                html.H2(['Heatmap for Deaths in Indian States'], style={
                                         'font-size': '30px', 'font-weight': 'bold', 'text-align': 'center'}),
                                 dcc.Graph(id='covid-heat-d', figure=fig_deaths,
                                           config={'displaylogo': False, 'displayModeBar': False}),
@@ -270,7 +270,7 @@ app.layout = dbc.Container([
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H2(['Covid-19 Patients Data for UK Regions'], style={
+                                html.H2(['Covid-19 Patients Data for India Regions'], style={
                                         'font-size': '30px', 'font-weight': 'bold', 'text-align': 'center'}),
                                 html.Div([
                                     html.Label(['Select Region'], style={
@@ -348,7 +348,7 @@ app.layout = dbc.Container([
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H2(['Covid-19 Infections with UK Region Map'], style={
+                                html.H2(['Covid-19 Infections with India Region Map'], style={
                                         'font-size': '30px', 'font-weight': 'bold', 'text-align': 'center'}),
                                 dcc.Graph(id='map', figure=update_map(), config={
                                           'displaylogo': False, 'displayModeBar': False})
