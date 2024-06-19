@@ -17,9 +17,9 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG], meta_tags=[
     {"property": "og:image",
         "content": "https://live.staticflickr.com/65535/51830937951_6dd1027bee_k.jpg"},
     {"property": "og:description",
-     "content": "A dashboard that shows the overall statistics of Covid-19 in the UK."}
+     "content": "A dashboard that shows the overall statistics of Covid-19 in the India."}
 ])
-app.title = "Data Visualization Project: Covid-19 Visualization (UK)"
+app.title = "Data Visualization Project: Covid-19 Visualization (India)"
 server = app.server
 
 # layout
