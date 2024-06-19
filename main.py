@@ -140,7 +140,7 @@ app.layout = dbc.Container([
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H2(['Headlines | Covid-19 as of Today In United Kingdom'], style={
+                                html.H2(['Headlines | Covid-19 as of Today In India'], style={
                                         'font-size': '30px', 'font-weight': 'bold', 'text-align': 'center'}),
                                 html.Div(
                                     id="news",
