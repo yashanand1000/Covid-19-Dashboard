@@ -11,9 +11,9 @@ from utils import *   # import all the helper unctions and prepared data
 # define app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG], meta_tags=[
     {"name": "viewport", "content": "width=device-width, initial-scale=1"},
-    {"property": "og:title", "content": "UK Covid-19 Dashboard"},
+    {"property": "og:title", "content": "India Covid-19 Dashboard"},
     {"property": "og:type", "content": "website"},
-    {"property": "og:url", "content": "https://uk-covid19-dashboard.herokuapp.com/"},
+    {"property": "og:url", "content": "https://India-covid19-dashboard.herokuapp.com/"},
     {"property": "og:image",
         "content": "https://live.staticflickr.com/65535/51830937951_6dd1027bee_k.jpg"},
     {"property": "og:description",
